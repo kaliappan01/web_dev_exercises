@@ -1,0 +1,39 @@
+.box{
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    margin:10px;
+    border: 10px solid black;
+    background-color: yellowgreen;
+}
+
+.overflowing-box{
+    border: 1px solid #333333;
+  width: 200px;
+  height: 100px;
+}
+.hidden-box{
+    border: 1px solid #333333;
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.scroll-box{
+    border: 1px solid #333333;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+
+pre{
+    text-align: left;
+    white-space: pre-line;
+    counter-reset: line;
+}
+code{
+    counter-increment: line;
+}
+code:before{
+    content: counter(line);
+}

@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>CSS exercise</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h2>CSS Excercise</h2>
+
+		<h3>Overflow in CSS</h3>
+		<p>
+			Everything in CSS is a box.
+			<div class="box">
+			</div> You can constrain the size of these boxes by assigning values of width and height (or inline-size and block-size).
+			 Overflow happens when there is too much content to fit in a box. CSS provides various tools to manage overflow. As you go further with CSS layout and writing CSS, you will encounter more overflow situations.
+		</p>
+
+		<p>
+			<h4>Overflow Property</h4>
+			The overflow property is how you take control of an element's overflow.
+			 It is the way you instruct the browser how it should behave. The default value of overflow is visible. With this default, we can see content when it overflows.
+		</p>
+	<div class="overflowing-box">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ab temporibus, nemo cupiditate ut delectus debitis dolores quos explicabo, odio minus perspiciatis perferendis iure! Recusandae quae deserunt laudantium temporibus quod!
+		</div>
+		<br>
+		<br>
+		<br>
+	<div>
+		<h4>overflow: hidden</h4>
+		<div class="hidden-box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos est, officiis sed placeat iusto odit. Atque, iste illum inventore veniam a, ea voluptatum esse ducimus at ut odio id eos.
+		</div>
+		To crop content when it overflows, we can set overflow: hidden. This does exactly what it says: it hides overflow. Beware that this can make some content invisible. You should only do this if hiding content won't cause problems.
+		<pre><code class="language-css">
+			.hidden-box{
+				border: 1px solid #333333;
+				width: 200px;
+				height: 100px;
+				overflow: hidden;
+			}
+		</code>
+	</pre>
+	</div>
+	<div>
+		<h4>overflow: scroll</h4>
+		<div class="scroll-box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos est, officiis sed placeat iusto odit. Atque, iste illum inventore veniam a, ea voluptatum esse ducimus at ut odio id eos.
+		</div>
+		Using overflow: scroll, browsers with visible scrollbars will always display them even if there is not enough content to overflow. 
+		This offers the advantage of keeping the layout consistent, instead of scrollbars appearing or disappearing, depending upon the amount of content in the container.
+		<pre><code class="language-css">
+			.scroll-box{
+				border: 1px solid #333333;
+				width: 200px;
+				height: 100px;
+				overflow: scroll;
+			}
+		</code>
+		<h4>overflow-x: scroll</h4>
+		<div class="scroll-box"
+		>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos est, officiis sed placeat iusto odit. Atque, iste illum inventore veniam a, ea voluptatum esse ducimus at ut odio id eos.
+		</div>
+		Using overflow: scroll, browsers with visible scrollbars will always display them even if there is not enough content to overflow. 
+		This offers the advantage of keeping the layout consistent, instead of scrollbars appearing or disappearing, depending upon the amount of content in the container.
+		<pre><code class="language-css">
+			.scroll-box{
+				border: 1px solid #333333;
+				width: 200px;
+				height: 100px;
+				overflow-x: scroll;
+			}
+		</code>
+	</pre>
+	</div>
+	Some other properties are :
+	<pre class="line-numbers">
+	<code class="language-css"> overflow: scroll-x_value scroll-y_value
+		</code>
+		<code class="language-css"> overflow: auto
+		</code>
+	</pre>
+	</body>
+</html>
+
